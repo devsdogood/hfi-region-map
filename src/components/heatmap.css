@@ -1,0 +1,51 @@
+/* Page Styles DEMO */
+
+.page {
+	padding: 2rem;
+	background: #ddd;
+}
+
+.container {
+	max-width: 2000px;
+	padding: 2rem;
+	background: #ffffff;
+}
+
+/* Map Styles */
+
+
+g:focus .county-label,
+g:hover .county-label,
+g.active .county-label {
+	stroke: #ffffff;
+	stroke-width: 0.99;
+}
+
+g:hover {
+	cursor: pointer;
+}
+
+/* List Styles DEMO */
+
+.list {
+	column-count: 4;
+}
+
+li {
+	list-style-type: none;
+	padding: 0.25rem 0.5rem;
+}
+
+li:target {
+	color: #ffffff;
+	background: #cc0000;
+	border-radius: 1px;
+}
+.county-path { 
+	fill: #FFFFFF; 
+	stroke: #ffffff; 
+	stroke-miterlimit: 10;
+}
+
+
+
