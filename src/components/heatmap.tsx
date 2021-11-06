@@ -9,10 +9,9 @@ const HeatMap = () => {
     const [headerText, changeHeaderText] = React.useState("Click on a county")
 	const [populationText, changePopulationText] = React.useState(null as string | null)
 	const [statOption, changeStatOption] = React.useState("womenHomeless" as 'totalHomeless' | 'womenHomeless' | 'childrenHomeless')
-	//const [homelessPopulationText, changeHomelessPopulationText] = react.useState(null as string | null)
 	const headerRef = React.useRef(null)
 	const strokeCol = "white";
-	const strokeWidth = 0.4;
+	const strokeWidth = 0.7;
 
 	const shadeBlue = (regionInput: keyof typeof stats) => {
 		let regionName: keyof typeof stats;
@@ -240,7 +239,7 @@ const HeatMap = () => {
 	}
 
     const northwestIowaClick = () => {
-        changeHeaderText("Northwest Iowa Region: Population: 158,577")
+        changeHeaderText("Northwest Iowa Region")
         changePopulationText("Population :158,577   Approximate Homelessness: 378")
 		scrollingFunc()
     }
@@ -368,7 +367,7 @@ const HeatMap = () => {
 	Total
 	</label>
 
-	<label style = {{paddingRight: '20px'}}>
+	<label style = {{paddingRight: '10px'}}>
 	<input 
 		type = 'radio'
 		value = 'womenHomeless'
